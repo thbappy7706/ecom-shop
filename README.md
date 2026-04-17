@@ -83,43 +83,9 @@ Notes:
 
 ---
 
-## System Architecture (component diagram)
 
-This diagram shows the major components and how they connect. It is in Mermaid flowchart syntax which GitHub renders in README files.
 
-```mermaid
-flowchart LR
-  subgraph Backend
-    A[Laravel App (Inertia, Controllers, Models)]
-  end
 
-  subgraph Frontend
-    B[React + Inertia + Vite]
-  end
-
-  C[MySQL]
-  D[Redis]
-  E[Meilisearch]
-  F[Mailpit]
-  G[Soketi]
-
-  B -->|Inertia requests| A
-  A -->|reads/writes| C
-  A -->|cache/queue| D
-  A -->|search index| E
-  A -->|send emails| F
-  A -->|broadcast events| G
-
-  style A fill:#fef3c7,stroke:#f59e0b
-  style B fill:#dbeafe,stroke:#3b82f6
-  style C fill:#fef2f2,stroke:#ef4444
-  style D fill:#ecfccb,stroke:#84cc16
-  style E fill:#eef2ff,stroke:#7c3aed
-  style F fill:#f0f9ff,stroke:#06b6d4
-  style G fill:#fff7ed,stroke:#fb923c
-```
-
----
 
 ## Data Relationship Diagram (DRD / ERD)
 
