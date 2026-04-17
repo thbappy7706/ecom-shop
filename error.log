@@ -1,0 +1,22 @@
+
+   INFO  Preparing database.  
+
+  Creating migration table ....................................... 5.42ms DONE
+
+   INFO  Running migrations.  
+
+  0001_01_01_000000_create_users_table .......................... 14.92ms DONE
+  0001_01_01_000001_create_cache_table .......................... 12.29ms DONE
+  0001_01_01_000002_create_jobs_table ........................... 12.45ms DONE
+  2025_08_14_170933_add_two_factor_columns_to_users_table ........ 5.96ms DONE
+  2026_04_17_160736_add_role_to_users_table ...................... 2.37ms DONE
+  2026_04_17_160737_create_cart_items_table ...................... 4.95ms DONE
+  2026_04_17_160737_create_carts_table ........................... 2.90ms DONE
+  2026_04_17_160737_create_categories_table ...................... 4.53ms DONE
+  2026_04_17_160737_create_order_items_table ..................... 2.86ms DONE
+  2026_04_17_160737_create_orders_table .......................... 3.11ms DONE
+  2026_04_17_160737_create_products_table ........................ 7.69ms DONE
+
+
+   INFO  Seeding database.  
+
