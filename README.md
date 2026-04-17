@@ -266,25 +266,3 @@ If you plan to contribute:
 
 ---
 
-## Troubleshooting & FAQs
-
-- Q: Migrations failing on Docker MySQL? A: Make sure the `DB_HOST` in `.env` matches the service name in `compose.yaml` (default `mysql`) and the container is healthy before running `php artisan migrate`.
-- Q: Assets not loading / Vite HMR issues? A: Check `VITE_PORT` in `.env.example` and ensure the `vite` process is running (`npm run dev`). When using Docker, forward ports properly.
-- Q: Mail not delivered? A: In local dev the project uses Mailpit. Open Mailpit dashboard at the port set in `.env.example` (default dashboard 8026) to view captured emails.
-
----
-
-## Final notes
-
-This README provides a starting point for developing and understanding the single-vendor e-commerce application. If you want, I can:
-
-- Generate a PNG/SVG export of the ERD or architecture diagram and add it to the repo
-- Create a CONTRIBUTING.md and CODE_OF_CONDUCT.md
-- Add a database seeder with sample data for easier manual testing
-
-If you want any of the above, tell me which and I'll add it.
-
----
-
-Generated on: 2026-04-18
-
